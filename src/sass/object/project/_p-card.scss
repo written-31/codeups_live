@@ -1,0 +1,31 @@
+@use 'global' as *;
+
+.p-card__thumb {
+}
+
+.p-card__thumb img {
+  aspect-ratio: 335/210;
+  object-fit: cover;
+}
+
+.p-card__body {
+  margin-top: rem(14);
+  color: $black;
+}
+
+.p-card__title {
+  font-family: $font-en;
+  font-weight: $bold;
+  font-size: rem(18);
+  letter-spacing: 0.09em;
+  line-height: calc(22/19);
+  text-align: center;
+}
+
+.p-card__text {
+  margin-top: rem(10);
+  font-size: rem(14);
+  letter-spacing: 0.07em;
+  line-height: calc(25/14);
+}
+

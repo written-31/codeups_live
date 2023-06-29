@@ -1,0 +1,67 @@
+@use 'global' as *;
+.p-mv {
+  position: relative;
+  height: 100vh;
+  background: url(../images/hero-sp.jpg) no-repeat center / cover;
+}
+
+.p-mv__inner {
+  height: inherit;
+}
+
+.p-mv__header {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: rem(50);
+  color: $white;
+}
+
+.p-mv__title {
+  font-size: rem(40);
+  font-weight: $bold;
+  font-family: $font-en;
+  line-height: calc(44/40);
+  letter-spacing: 0.05em;
+}
+
+.p-mv__subtitle {
+  font-size: rem(16);
+  line-height: calc(29/16);
+  letter-spacing: 0.108em;
+  margin-top: rem(20);
+}
+
+.p-mv__btn {
+  display: block;
+  margin-top: rem(50);
+}
+
+.p-mv__scroll {
+  font-size: rem(12);
+  letter-spacing: 0.08em;
+  font-family: $font-en;
+  font-weight: $bold;
+  color: $white;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: rem(78);
+  transform: rotate(90deg);
+}
+
+.p-mv__scroll span{
+  position: relative;
+
+}
+.p-mv__scroll span::after{
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: rem(50);
+  background-color: $white;
+  transform: rotate(90deg);
+  right: rem(-35);
+  bottom: rem(-17);
+}
+

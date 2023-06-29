@@ -1,0 +1,16 @@
+@use 'global' as *;
+.p-service {
+
+}
+
+.p-service__inner {
+
+}
+
+.p-service__items {
+  margin-top: rem(31);
+}
+
+.p-service__item + .p-service__item {
+  margin-top: rem(40);
+}

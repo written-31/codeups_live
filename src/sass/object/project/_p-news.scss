@@ -1,0 +1,23 @@
+@use 'global' as *;
+
+.p-news {
+
+}
+
+.p-news__inner {
+
+}
+
+.p-news__title {
+
+}
+
+.p-news__items {
+  margin-top: rem(32);
+}
+
+.p-news__item + .p-news__item {
+  margin-top: rem(40);
+}
+
+
