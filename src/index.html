@@ -21,8 +21,13 @@
   <!-- google-fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">  <!-- css -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">  
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- swiper script -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script defer src="./assets/js/script.js"></script>
@@ -180,11 +185,43 @@
             </div><!-- /p-service-card__body -->
           </div><!-- /p-service__item p-service-card -->
         </div><!-- /p-service__items -->
+        <div class="p-service__btn">
+          <a href="#" class="c-btn">more</a><!-- /c-btn -->
+        </div><!-- /p-service__btn -->
       </div><!-- /p-service__inner l-service -->
     </section><!-- /p-service -->
 
-    <section class="works">
-
+    <section class="p-works l-works">
+      <div class="p-works__inner l-inner">
+        <div class="p-works__content">
+          <div class="p-works__images">
+            <div class="swiper" id="js-works-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide p-works__img"><img src="./assets/images/service_1.jpg" alt=""></div>
+                <div class="swiper-slide p-works__img"><img src="./assets/images/service_2.jpg" alt=""></div>
+                <div class="swiper-slide p-works__img"><img src="./assets/images/service_3.jpg" alt=""></div>
+              </div>
+              <!-- 次の1行を追加 -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div><!-- /p-works__images -->
+          <div class="p-works__body">
+            <div class="p-works__title">
+              <div class="c-section-header">
+                <h2 class="c-section-header__title">works</h2><!-- /c-section-header__subtitle -->
+                <p class="c-section-header__subtitle">制作実績</p><!-- /c-section-header__title -->
+              </div><!-- /c-section-header -->          
+            </div><!-- /p-news__title -->
+            <div class="p-works__text-block">
+              <p class="p-works__text">様々なジャンルのWebサイト制作が可能です。<br>
+                ご購入やお申込み数の増加などを実現します！</p><!-- /p-works__text -->
+            </div><!-- /p-works__text-block -->
+            <div class="p-works__btn">
+              <a href="#" class="c-btn">more</a><!-- /c-btn -->
+            </div><!-- /p-works__btn -->
+          </div><!-- /p-works__body -->
+        </div><!-- /p-works__content -->
+      </div><!-- /p-works__inner l-inner -->
     </section><!-- /works -->
 
     <section class="p-company l-company">
